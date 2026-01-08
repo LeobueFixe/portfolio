@@ -1,0 +1,10 @@
+.hero{
+    width: 400px;
+    height: 220px;
+    font-style: italic;
+
+
+    position: relative;
+    top: 100px;
+    left: 30px;
+}
