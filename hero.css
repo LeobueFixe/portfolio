@@ -2,9 +2,26 @@
     width: 400px;
     height: 220px;
     font-style: italic;
+    font-size: 20px;
 
 
     position: relative;
     top: 100px;
     left: 30px;
+}
+
+.about{
+    width: 70vw;
+    height: 400px;
+    font-size: 20px;
+    position: relative;
+    top: 130px
+}
+.about_text{
+    text-decoration: none;
+    color: #000;          
+    font-size: 20px;
+    padding: 8px 15px;
+    border-radius: 8px;
+    transition: background 0.3s, color 0.3s;
 }
