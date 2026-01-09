@@ -1,8 +1,6 @@
 .navbar {
-    width: 62vw;
-    height: 60px;
-    
-
+    width: 65vw;
+    height: 69px;
     background-color: #607d8b; 
     color: #fff;               
     
@@ -13,29 +11,54 @@
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    top: 20px;
-    
+    top: 30px;
     padding: 0 25px; 
-    border-radius: 12px;         
     
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-    
-
+    box-shadow: 8px 8px  rgb(0, 0, 0);
+    border: 4px solid black;
     transition: all 0.3s ease;
+
 }
 
 
-.navbar a {
+.btn {
+
     text-decoration: none;
-    color: #ffffff;          
+    color: #ffffff;
     font-size: 20px;
     padding: 8px 15px;
     border-radius: 8px;
-    transition: background 0.3s, color 0.3s;
+
+}
+.btn-floating{
+
+    display: inline-block;
+    transition: transform 0.25s cubic-bezier(.4,0,.2,1);
+
 }
 
+.btn-floating:hover {
+        
+    transform: 
+    translate(-10px, -10px)
+    scale(1.5)
+    rotate(-7deg);
 
-.navbar a:hover {
-    background-color: #e0d8c3; 
-    color: #000;                
 }
+
+.btn-keyboard{
+    background-color: lightseagreen;
+    border: 3px solid black;
+    box-shadow: 3px 3px rgb(0, 0, 0);
+
+    cursor: pointer;
+    display: inline-block;
+    transition: transform 0.1s ease, box-shadow 0.1s ease, background-color 0.1s ease;
+}
+
+.btn-keyboard:hover{
+    box-shadow: 0 0 rgb(0, 0, 0);
+    transform: 
+    translate(5px, 5px);
+}
+

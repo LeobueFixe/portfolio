@@ -1,27 +1,46 @@
-.hero{
-    width: 400px;
-    height: 220px;
-    font-style: italic;
-    font-size: 20px;
-
+.hero {
+    width: 600px;
 
     position: relative;
-    top: 100px;
+    top: 150px;
     left: 30px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+#intro {
+    color:darkturquoise;
+    font-size: 40px;
+    margin: 10px;
+    line-height: 1;
+}
+
+#intro_text {
+    font-size: 25px;
+    margin: 10px;
+    line-height: 1.1;
+}
+#title {
+    font-size: 60px;
+    margin: 15px;
+    margin-left: 10px;
 }
 
 .about{
     width: 70vw;
     height: 400px;
     font-size: 20px;
+    left: 30px;
     position: relative;
-    top: 130px
+    top: 400px
 }
 .about_text{
+    width: 65vw;
     text-decoration: none;
     color: #000;          
     font-size: 20px;
-    padding: 8px 15px;
     border-radius: 8px;
     transition: background 0.3s, color 0.3s;
 }
