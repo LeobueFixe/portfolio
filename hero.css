@@ -18,6 +18,8 @@
     align-items: center;
     padding: 20px 0;
     gap: 10px;
+    top: 150px;
+    left: 30px;
 }
 
 #intro {
@@ -31,6 +33,7 @@
     font-size: 25px;
     margin: 10px;
     line-height: 1.5;
+    line-height: 1.1;
 }
 #title {
     font-size: 60px;
