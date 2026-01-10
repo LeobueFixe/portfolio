@@ -1,27 +1,78 @@
-.hero{
-    width: 400px;
-    height: 220px;
-    font-style: italic;
-    font-size: 20px;
+.hero {
+    width: 600px;
+    position: relative;
+    top: 150px;
+    left: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
 
-
+.tech-badgets {
+    width: 65vw;
     position: relative;
     top: 100px;
-    left: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    gap: 10px;
+}
+
+#intro {
+    color:darkturquoise;
+    font-size: 40px;
+    margin: 10px;
+    line-height: 1;
+}
+
+#intro_text {
+    font-size: 25px;
+    margin: 10px;
+    line-height: 1.5;
+}
+#title {
+    font-size: 60px;
+    margin: 15px;
+    margin-left: 10px;
+}
+
+.badgets{
+    
+    background-color: rgb(255, 255, 255);
+    border: 3px solid black;
+    box-shadow: 3px 3px rgb(0, 0, 0);
+    border-radius: 10px;
+    font-size: 20px;
+    margin: 10px;
+    padding: 8px 15px;
+    cursor: pointer;
+    display: inline-block;
+    transition: transform 0.1s ease, box-shadow 0.1s ease, background-color 0.1s ease;
+}
+
+.badgets:hover{
+    background-color: #607d8b;
+    color: #fff;
+    box-shadow: 0 0 rgb(0, 0, 0);
+    transform: 
+    translate(5px, 5px);
 }
 
 .about{
     width: 70vw;
     height: 400px;
     font-size: 20px;
+    left: 30px;
     position: relative;
-    top: 130px
+    top: 400px
 }
 .about_text{
+    width: 65vw;
     text-decoration: none;
     color: #000;          
     font-size: 20px;
-    padding: 8px 15px;
     border-radius: 8px;
     transition: background 0.3s, color 0.3s;
 }

@@ -7,40 +7,59 @@
     <link rel="stylesheet" href="body.css">
     <link rel="stylesheet" href="hero.css">
     <link rel="stylesheet" href="navbar.css">
+    <script src="script.js"></script>
 </head>
 <body>
     <div class="page_wrapper">
         
         <nav class="navbar">
             <div class="nav_left">
-                <a href="#">Home</a>
+                <a href="#hero" class="nav nav-active">Home</a>
             </div>
             <div class="nav_right">
-                <a href="#about">About</a>
-                <a href="#journey">Journey</a>
-                <a href="#skills">Skills</a>
+                <a href="#about" class="nav nav-link">About</a>
+                <a href="#journey" class="nav nav-link">Journey</a>
+                <a href="#skills" class="nav nav-link">Skills</a>
+                <a href="#contact" class="nav nav-cta">Let’s Talk!</a>
             </div>
             
         </nav>
-        <div class="hero">
-            <div class="hero-text">
-                <h1>👋 Hi there</h1>
-                <h2>I'm Leandro Mendes.</h2>
-                <p>
-                    I’m a student at ETIC, a private school, studying programming. I really like this area and I’m always trying to learn new things. I enjoy practicing, exploring technology, and improving my skills step by step.
+        <section class="hero">
+            <div class="hero-text" id="hero">
+                <h1 id="intro">Ahoy!🚀</h1>
+                <h2 id="title">I'm Leandro Mendes.</h2>
+                <p id="intro_text">
+                    I’m a student at ETIC, a private school, studying programming. 
+                    I really like this area and I’m always trying to learn new things.
+                    I enjoy practicing, exploring technology, and improving my skills step by step.
                 </p>
             </div>
             <div class="hero-img">
                     
             </div>
+            <div class="tech-badgets">
+                <i class="badgets">🟨 JS</i>
+                <i class="badgets">🐍 Python</i>
+                <i class="badgets">📄 HTML</i>
+                <i class="badgets">🎨 CSS</i>               
+                <i class="badgets">🎵 C#</i>
+                <i class="badgets">🐘 PHP</i>
+                <i class="badgets">🐳 Docker</i>
+                <i class="badgets">🌿 Git</i>
+
+            </div>
         
-        </div>
-        <div class="about">
+        </section>
+        <div class="about" id="about">
             <h2>About me:</h2>
-            <p class="about_text">I’m relatively new to the programming field. I started studying programming about three years ago when I entered high school, where I completed a programming course at ETIC. Currently, I’m enrolled in a Full Stack Development course.
-I really enjoy programming and learning new things in this area. In my free time, I like playing games and spending time with friends and family.
-I want to keep learning more about programming because I feel this field offers many different possibilities. Before choosing a specific area, I want to explore different paths to discover what I enjoy the most. In the future, I hope to work in something I truly like, either as a freelancer or in a company. I’m curious, open to feedback, and always willing to learn new things.
-        </p>
+            <p class="about_text">I’m relatively new to the programming field. I started studying programming about three years 
+                ago when I entered high school, where I completed a programming course at ETIC. Currently, I’m enrolled in a Full 
+                Stack Development course. I really enjoy programming and learning new things in this area. In my free time, I like
+                playing games and spending time with friends and family. I want to keep learning more about programming because I
+                feel this field offers many different possibilities. Before choosing a specific area, I want to explore different 
+                paths to discover what I enjoy the most. In the future, I hope to work in something I truly like, either as a 
+                freelancer or in a company. I’m curious, open to feedback, and always willing to learn new things.
+            </p>
         </div>
 
     </div>
