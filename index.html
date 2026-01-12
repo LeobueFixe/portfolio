@@ -7,8 +7,9 @@
     <link rel="stylesheet" href="body.css">
     <link rel="stylesheet" href="hero.css">
     <link rel="stylesheet" href="navbar.css">
-    <script src="script.js"></script>
-    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+    <link rel="stylesheet" href="map.css">
+
 </head>
 <body>
     <div class="page_wrapper">
@@ -18,14 +19,14 @@
                 <a href="#hero" class="nav nav-active">Home</a>
             </div>
             <div class="nav_right">
-                <a href="#about" class="nav nav-link">About</a>
+                <a href="#container" class="nav nav-link">About</a>
                 <a href="#journey" class="nav nav-link">Journey</a>
                 <a href="#skills" class="nav nav-link">Skills</a>
                 <a href="#contact" class="nav nav-cta">Let’s Talk!</a>
             </div>
             
         </nav>
-        <section class="hero">
+        <section class="hero-section">
             <div class="hero-text" id="hero">
                 <h1 id="intro">Ahoy!🚀</h1>
                 <h2 id="title">I'm Leandro Mendes.</h2>
@@ -34,11 +35,17 @@
                     I really like this area and I’m always trying to learn new things.
                     I enjoy practicing, exploring technology, and improving my skills step by step.
                 </p>
+                <a href="https://github.com/LeobueFixe" target="_blank" class="git-btn">
+                    <img src="github-mark.png" alt="GitHub">
+                </a>
+
             </div>
             <div class="hero-img">
-                    
+                    <img src="SAVE_20250329_243647.jpg" class="img">
             </div>
-            <div class="tech-badgets">
+        
+        </section>
+        <div class="tech-badgets">
                 <i class="badgets">🟨 JS</i>
                 <i class="badgets">🐍 Python</i>
                 <i class="badgets">📄 HTML</i>
@@ -47,29 +54,45 @@
                 <i class="badgets">🐘 PHP</i>
                 <i class="badgets">🐳 Docker</i>
                 <i class="badgets">🌿 Git</i>
-
             </div>
-        
-        </section>
-        <div class="about" id="about">
-            <h2>About me:</h2>
-            <p class="about_text">I’m relatively new to the programming field. I started studying programming about three years 
-                ago when I entered high school, where I completed a programming course at ETIC. Currently, I’m enrolled in a Full 
-                Stack Development course. I really enjoy programming and learning new things in this area. In my free time, I like
-                playing games and spending time with friends and family. I want to keep learning more about programming because I
-                feel this field offers many different possibilities. Before choosing a specific area, I want to explore different 
-                paths to discover what I enjoy the most. In the future, I hope to work in something I truly like, either as a 
-                freelancer or in a company. I’m curious, open to feedback, and always willing to learn new things.
-            </p>
-            <p class="about_text">I’m relatively new to the programming field. I started studying programming about three years 
-                ago when I entered high school, where I completed a programming course at ETIC. Currently, I’m enrolled in a Full 
-                Stack Development course. I really enjoy programming and learning new things in this area. In my free time, I like
-                playing games and spending time with friends and family. I want to keep learning more about programming because I
-                feel this field offers many different possibilities. Before choosing a specific area, I want to explore different 
-                paths to discover what I enjoy the most. In the future, I hope to work in something I truly like, either as a 
-                freelancer or in a company. I’m curious, open to feedback, and always willing to learn new things.
-            </p>
+        <div class="container" id="container">
+            <h2 id="container-title">About</h2>
+            <div class="card">
+                <p class="card-text">I’m relatively new to the programming field. I started studying programming about three years 
+                    ago when I entered high school, where I completed a programming course at ETIC. Currently, I’m enrolled in a Full 
+                    Stack Development course. I really enjoy programming and learning new things in this area. In my free time, I like
+                    playing games and spending time with friends and family. I want to keep learning more about programming because I
+                    feel this field offers many different possibilities. Before choosing a specific area, I want to explore different 
+                    paths to discover what I enjoy the most. In the future, I hope to work in something I truly like, either as a 
+                    freelancer or in a company. I’m curious, open to feedback, and always willing to learn new things.
+                </p>
+            </div>
         </div>
+        <section class="journey">
+            <h1 id="journey-title">Global Expirences</h1>
+            <div class="map-container">
+                <div id="map"></div>
+                <div id="timeline">
+                    <h1>Timeline</h1>
+                    <div id="timeline-content">
+                        <h2>Kaunas, Lithuania</h2>
+                        <p>
+                            Participed in an Erasmus+ project focused on IT and programing skills, colaborating with international peers.
+                            Gained hands-on expirence in real-world tasks while exploring Lithuania culture and work practices
+                        </p>
+                        <h2>Levice, Slovakia</h2>
+                        <p>
+                            Engaged in an Erasmus+ profession training project, applying technical knowledge in a real work environment.
+                            Developed teamwork and adaptability skills while experiecing Slovak culture and international collaboration.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+            <script src="script.js"></script>
+        </section>
+
 
     </div>
 

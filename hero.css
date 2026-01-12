@@ -1,11 +1,24 @@
-.hero {
-    width: 600px;
+.hero-section {
+    width: 65vw;
     position: relative;
     top: 150px;
     left: 30px;
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
     gap: 5px;
+}
+
+.hero-img{
+    display: flex;
+    justify-content: flex-end;
+    border-radius: 15px;
+}
+
+.hero-img img{
+    border-radius: 15px;
+    margin-right: 100px;
 }
 
 .tech-badgets {
@@ -22,6 +35,10 @@
     left: 30px;
 }
 
+.hero-text{
+    width: 40vw;
+}
+
 #intro {
     color:darkturquoise;
     font-size: 40px;
@@ -30,15 +47,45 @@
 }
 
 #intro_text {
-    font-size: 25px;
+    font-size: 20px;
     margin: 10px;
     line-height: 1.5;
-    line-height: 1.1;
 }
 #title {
     font-size: 60px;
     margin: 15px;
     margin-left: 10px;
+}
+
+
+.img{
+    width: 15vw;
+}
+
+.git-btn {
+    padding: 8px 12px;
+    display: inline-flex;
+    align-items: center;
+    border: 3px solid black;
+    border-radius: 10px;
+    justify-content: center;
+    box-shadow: 3px 3px rgb(0, 0, 0);
+    background-color: white;
+    background-clip: padding-box;
+    cursor: pointer;
+    display: inline-block;
+    transition: transform 0.1s ease, box-shadow 0.1s ease, background-color 0.1s ease;
+}
+
+.git-btn:hover{
+    box-shadow: 0 0 rgb(0, 0, 0);
+    transform: 
+    translate(5px, 5px);
+}
+
+.git-btn img {
+    width: 26px;
+    height: auto;
 }
 
 .badgets{
@@ -61,21 +108,4 @@
     box-shadow: 0 0 rgb(0, 0, 0);
     transform: 
     translate(5px, 5px);
-}
-
-.about{
-    width: 70vw;
-    height: 400px;
-    font-size: 20px;
-    left: 30px;
-    position: relative;
-    top: 400px
-}
-.about_text{
-    width: 65vw;
-    text-decoration: none;
-    color: #000;          
-    font-size: 20px;
-    border-radius: 8px;
-    transition: background 0.3s, color 0.3s;
 }
