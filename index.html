@@ -7,14 +7,18 @@
     <link rel="stylesheet" href="body.css">
     <link rel="stylesheet" href="hero.css">
     <link rel="stylesheet" href="navbar.css">
-    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+    <link rel="stylesheet" href="displays.css">
     <link rel="stylesheet" href="map.css">
+    <link rel="stylesheet" href="skills.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
 
 </head>
 <body>
     <div class="page_wrapper">
-        
-        <nav class="navbar">
+        <div class="for-mobile">
+            &#9776; 
+        </div>
+        <nav class="navbar" id="navbar">
             <div class="nav_left">
                 <a href="#hero" class="nav nav-active">Home</a>
             </div>
@@ -24,6 +28,7 @@
                 <a href="#skills" class="nav nav-link">Skills</a>
                 <a href="#contact" class="nav nav-cta">Let’s Talk!</a>
             </div>
+
             
         </nav>
         <section class="hero-section">
@@ -35,9 +40,6 @@
                     I really like this area and I’m always trying to learn new things.
                     I enjoy practicing, exploring technology, and improving my skills step by step.
                 </p>
-                <a href="https://github.com/LeobueFixe" target="_blank" class="git-btn">
-                    <img src="github-mark.png" alt="GitHub">
-                </a>
 
             </div>
             <div class="hero-img">
@@ -45,16 +47,6 @@
             </div>
         
         </section>
-        <div class="tech-badgets">
-                <i class="badgets">🟨 JS</i>
-                <i class="badgets">🐍 Python</i>
-                <i class="badgets">📄 HTML</i>
-                <i class="badgets">🎨 CSS</i>               
-                <i class="badgets">🎵 C#</i>
-                <i class="badgets">🐘 PHP</i>
-                <i class="badgets">🐳 Docker</i>
-                <i class="badgets">🌿 Git</i>
-            </div>
         <div class="container" id="container">
             <h2 id="container-title">About</h2>
             <div class="card">
@@ -68,12 +60,12 @@
                 </p>
             </div>
         </div>
-        <section class="journey">
+        <section class="journey" id="journey">
             <h1 id="journey-title">Global Expirences</h1>
             <div class="map-container">
                 <div id="map"></div>
                 <div id="timeline">
-                    <h1>Timeline</h1>
+                    <h1 id="timeline-title">Timeline</h1>
                     <div id="timeline-content">
                         <h2>Kaunas, Lithuania</h2>
                         <p>
@@ -92,8 +84,37 @@
             <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
             <script src="script.js"></script>
         </section>
+        <div class="skills" id="skills">
+            <h1 id="skills-title">Skills</h1>
+            <div class="tech-badgets">
+                <i class="badgets">🟨 JS</i>
+                <i class="badgets">🐍 Python</i>
+                <i class="badgets">📄 HTML</i>
+                <i class="badgets">🎨 CSS</i>               
+                <i class="badgets">🎵 C#</i>
+                <i class="badgets">🐘 PHP</i>
+                <i class="badgets">🐳 Docker</i>
+                <i class="badgets">🌿 Git</i>
+            </div>
+        </div>
 
+        <div class="contact">
+            <h1 id="contact-title">Contact:</h1>
+                <div class="contact-container">
+                    <p id="email">leandro.d.m.mendes@gmail.com</p>
 
+                    <div class="contact-buttons">
+                        <a href="https://github.com/LeobueFixe" target="_blank" class="contact-btn">
+                            <img src="github-mark.png" alt="GitHub">
+                        </a>
+
+                        <a href="https://www.instagram.com/leoo_o_27/" target="_blank" class="contact-btn">
+                            <img src="insta.png" alt="Instagram">
+                        </a>
+                    </div>
+                </div>
+
+        </div>
     </div>
 
 

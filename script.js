@@ -1,19 +1,25 @@
 document.addEventListener("DOMContentLoaded", function() {
 
+    const screenWidth = window.innerWidth;
+
+    let initialZoom = 4;
+
+    if (screenWidth >= 601 && screenWidth <= 1024) {
+        initialZoom = 3; 
+    }
+
     const centerLat = (54.8985 + 48.2167) / 2; 
     const centerLng = (23.9036 + 18.6167) / 2; 
 
     const map = L.map('map', {
         center: [centerLat, centerLng],
-        zoom: 4, 
+        zoom: initialZoom,
         zoomControl: false,
         scrollWheelZoom: false,
         attributionControl: false
     });
 
-    L.control.zoom({
-        position: 'topright'
-    }).addTo(map)
+    L.control.zoom({ position: 'topright' }).addTo(map);
 
     L.tileLayer('https://tiles.stadiamaps.com/tiles/stamen_watercolor/{z}/{x}/{y}.jpg',{
         maxZoom: 10,
@@ -24,14 +30,14 @@ document.addEventListener("DOMContentLoaded", function() {
         {
             coords: [54.8985, 23.9036],
             name: "Lithuania",
+            city: "Kaunas",
             period: "Dec 2023 - Jan 2024",
-            description: "Erasmus program in Kaunas, learned new tools, met amazing people, expanded dev skills."
         },
         {
             coords: [48.2167, 18.6167],
             name: "Slovakia",
+            city: "Levice",
             period: "Mar 2025 - Apr 2025",
-            description: "Erasmus program in Levice, explored programming further, collaborated on international projects."
         }
     ];
 
@@ -72,13 +78,11 @@ document.addEventListener("DOMContentLoaded", function() {
 
         inner.bindPopup(
             `<div id="popup-${index}">
-                <h4>${loc.name}</h4>
+                <h4>${loc.name}, ${loc.city}</h4>
                 <p><strong>${loc.period}</strong></p>
-                <p>${loc.description}</p>
             </div>`,
             { className: 'my-popup' }
         );
-
     });
 
 });

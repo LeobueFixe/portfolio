@@ -1,111 +1,41 @@
 .hero-section {
-    width: 65vw;
-    position: relative;
-    top: 150px;
-    left: 30px;
+    width: calc(100% - 150px);
+    max-width: 65vw;
+    margin: 120px auto 0 auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-direction: row;
-    gap: 5px;
+    gap: 20px;
 }
 
-.hero-img{
-    display: flex;
-    justify-content: flex-end;
-    border-radius: 15px;
-}
-
-.hero-img img{
-    border-radius: 15px;
-    margin-right: 100px;
-}
-
-.tech-badgets {
-    width: 65vw;
-    position: relative;
-    top: 100px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    padding: 20px 0;
-    gap: 10px;
-    top: 150px;
-    left: 30px;
-}
-
-.hero-text{
+.hero-text {
     width: 40vw;
 }
 
+.hero-img {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.hero-img img {
+    width: 15vw;
+    border-radius: 15px;
+}
+
 #intro {
-    color:darkturquoise;
+    color: darkturquoise;
     font-size: 40px;
-    margin: 10px;
+    margin: 10px 0;
     line-height: 1;
+}
+
+#title {
+    font-size: 60px;
+    margin: 10px 0;
 }
 
 #intro_text {
     font-size: 20px;
-    margin: 10px;
+    margin: 10px 0;
     line-height: 1.5;
-}
-#title {
-    font-size: 60px;
-    margin: 15px;
-    margin-left: 10px;
-}
-
-
-.img{
-    width: 15vw;
-}
-
-.git-btn {
-    padding: 8px 12px;
-    display: inline-flex;
-    align-items: center;
-    border: 3px solid black;
-    border-radius: 10px;
-    justify-content: center;
-    box-shadow: 3px 3px rgb(0, 0, 0);
-    background-color: white;
-    background-clip: padding-box;
-    cursor: pointer;
-    display: inline-block;
-    transition: transform 0.1s ease, box-shadow 0.1s ease, background-color 0.1s ease;
-}
-
-.git-btn:hover{
-    box-shadow: 0 0 rgb(0, 0, 0);
-    transform: 
-    translate(5px, 5px);
-}
-
-.git-btn img {
-    width: 26px;
-    height: auto;
-}
-
-.badgets{
-    
-    background-color: rgb(255, 255, 255);
-    border: 3px solid black;
-    box-shadow: 3px 3px rgb(0, 0, 0);
-    border-radius: 10px;
-    font-size: 20px;
-    margin: 10px;
-    padding: 8px 15px;
-    cursor: pointer;
-    display: inline-block;
-    transition: transform 0.1s ease, box-shadow 0.1s ease, background-color 0.1s ease;
-}
-
-.badgets:hover{
-    background-color: #607d8b;
-    color: #fff;
-    box-shadow: 0 0 rgb(0, 0, 0);
-    transform: 
-    translate(5px, 5px);
 }

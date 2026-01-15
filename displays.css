@@ -1,0 +1,253 @@
+@media (max-width: 1024px) {
+
+    .navbar {
+        width: calc(100% - 80px);
+        max-width: none;
+        padding: 0 20px;
+    }
+
+    .hero-section {
+        width: 85vw;
+        flex-direction: column;
+        text-align: center;
+        margin-top: 150px;
+    }
+
+    .hero-text {
+        width: 90%;
+    }
+
+    .hero-img img {
+        width: 40vw;
+        margin: 0;
+    }
+
+    #intro {
+        font-size: 32px;
+    }
+
+    #title {
+        font-size: 45px;
+    }
+
+    #intro_text {
+        font-size: 18px;
+    }
+
+    .container {
+        width: calc(100% - 80px);
+        max-width: none;
+    }
+
+    #container-title {
+        font-size: 40px;
+    }
+
+    .card {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .skills {
+        width: calc(100% - 80px);
+        max-width: none;
+    }
+
+    #skills-title {
+        font-size: 40px;
+    }
+
+    .badgets {
+        font-size: 18px;
+        padding: 6px 12px;
+    }
+
+    .journey {
+        width: calc(100% - 20px);
+        max-width: none;
+    }
+
+    #journey-title {
+        font-size: 40px;
+    }
+
+    .map-container {
+        width: 100%;
+        max-width: 100%;
+        margin-left: 0;
+        max-width: none;
+        padding: 0;
+        margin: 0;
+        box-shadow: 4px 4px black;
+        border-width: 3px;
+    }
+
+    #map,
+    #timeline {
+        height: 45vh;
+    }
+    #timeline {
+        padding: 10px;
+    }
+
+    .contact {
+        width: calc(100% - 80px);
+        max-width: none;
+    }
+
+    #contact-title {
+        font-size: 40px;
+    }
+
+    .contact-container {
+        flex-direction: column;
+        gap: 20px;
+        align-items: flex-start;
+    }
+
+    .contact-buttons {
+        align-self: flex-start;
+    }
+}
+
+@media (max-width: 600px) {
+
+
+    .navbar {
+        width: calc(100% - 40px);
+        height: auto;
+        padding: 10px 15px;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .nav {
+        font-size: 16px;
+        padding: 6px 10px;
+    }
+
+    .hero-section {
+        width: 95vw;
+        margin-top: 120px;
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .hero-img img {
+        width: 60vw;
+    }
+
+    #intro {
+        font-size: 26px;
+    }
+
+    #title {
+        font-size: 36px;
+    }
+
+    #intro_text {
+        font-size: 16px;
+    }
+
+    .container {
+        width: calc(100% - 40px);
+    }
+
+    #container-title {
+        font-size: 32px;
+    }
+
+    .card-text {
+        font-size: 16px;
+        margin: 15px;
+    }
+
+    .skills {
+        width: calc(100% - 40px);
+    }
+
+    #skills-title {
+        font-size: 32px;
+    }
+
+    .badgets {
+        font-size: 16px;
+        padding: 6px 10px;
+    }
+
+    .journey {
+        width: calc(100% - 40px);
+    }
+
+    #journey-title {
+        font-size: 32px;
+    }
+
+    #map {
+        display: none !important;
+    }
+
+    .map-container {
+        width: 100% !important;
+        max-width: none !important;
+        margin: 0 !important;
+        padding: 0;
+        display: block;
+        border: 5px solid black;
+        box-shadow: 6px 6px black;
+    }
+
+    #timeline {
+        width: 100% !important;
+        height: auto !important;
+        max-height: none !important;
+        padding: 15px;
+        border-left: none;
+    }
+
+    .contact {
+        width: calc(100% - 40px);
+    }
+
+    #contact-title {
+        font-size: 32px;
+    }
+
+    .contact-container {
+        width: 100%;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;   
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    #email {
+        font-size: 18px;
+        width: 100%;
+    }
+
+    .contact-buttons {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        gap: 15px;                
+    }
+
+    .contact-btn {
+        width: 40px;
+        height: 40px;
+        flex-shrink: 0;           
+    }
+
+    .contact-btn img {
+        width: 22px;
+    }
+}
