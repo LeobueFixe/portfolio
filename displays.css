@@ -251,3 +251,137 @@
         width: 22px;
     }
 }
+
+@media (max-width: 400px) {
+
+    .page_wrapper {
+        padding: 0 !important;
+        margin: 0 !important;
+        width: 100% !important;
+    }
+
+    .navbar {
+        width: 100% !important;
+        padding: 10px 10px !important;
+        border-radius: 0;
+    }
+
+    .nav {
+        font-size: 14px;
+        padding: 5px 8px;
+    }
+
+    #journey-title,
+    #skills-title,
+    #projects-title,
+    #contact-title,
+    #container-title {
+        font-size: 26px !important;
+        padding: 10px 0 !important;
+        border-width: 3px !important;
+        box-shadow: 3px 3px black !important;
+        width: 100% !important;
+        margin: 0 auto 15px auto;
+    }
+
+    .hero-section {
+        width: 100% !important;
+        margin-top: 100px;
+        padding: 0 10px;
+    }
+
+    .hero-img img {
+        width: 70vw !important;
+    }
+
+    #intro {
+        font-size: 22px;
+    }
+
+    #title {
+        font-size: 30px;
+    }
+
+    #intro_text {
+        font-size: 15px;
+    }
+
+    .container {
+        width: 100% !important;
+        padding: 0 10px;
+    }
+
+    .card-text {
+        font-size: 15px;
+        margin: 10px;
+    }
+
+    .skills {
+        width: 100% !important;
+        padding: 0 10px;
+    }
+
+    .badgets {
+        font-size: 14px;
+        padding: 5px 8px;
+    }
+
+    .journey {
+        width: 100% !important;
+        padding: 0 10px;
+    }
+
+    .map-container {
+        width: 100% !important;
+        border-width: 3px !important;
+        box-shadow: 3px 3px black !important;
+    }
+
+    #map {
+        display: none !important; 
+    }
+
+    #timeline {
+        width: 100% !important;
+        padding: 10px !important;
+    }
+
+    .projects {
+        width: 100% !important;
+        padding: 0 10px;
+    }
+
+    .project-card {
+        width: 100% !important;
+        box-shadow: 3px 3px black !important;
+        border-width: 3px !important;
+    }
+
+    .project-img {
+        height: 140px !important;
+    }
+
+    /* CONTACT */
+    .contact {
+        width: 100% !important;
+        padding: 0 10px;
+    }
+
+    .contact-container {
+        padding: 15px !important;
+        gap: 15px !important;
+    }
+
+    #email {
+        font-size: 16px !important;
+    }
+
+    .contact-btn {
+        width: 35px !important;
+        height: 35px !important;
+    }
+
+    .contact-btn img {
+        width: 20px !important;
+    }
+}
